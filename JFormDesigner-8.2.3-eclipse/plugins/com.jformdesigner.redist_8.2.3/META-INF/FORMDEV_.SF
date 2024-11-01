@@ -1,0 +1,99 @@
+Signature-Version: 1.0
+Created-By: 11.0.14.1 (Azul Systems, Inc.)
+SHA-256-Digest-Manifest: a8WaJzz8kk1U1DLVdj5HNh5VSg3xs5DLt7DtKJzn2fY=
+SHA-256-Digest-Manifest-Main-Attributes: A683dvXzyQ/qtj/U6KZp+6V6DxyCTiH
+ WbBTRQblZpCc=
+
+Name: jfd-loader.jar
+SHA-256-Digest: GBdOpC0foMjEI1KqpyLV+LOtahHPsDUiHaWf5TWHm2U=
+
+Name: swing-layout.jar
+SHA-256-Digest: mDCnq0fp9hNjGtimbuDWEFJfbt9PF/6hNesIqVBR/Xc=
+
+Name: miglayout-swing.jar
+SHA-256-Digest: nPDHJhAqfGNNZesieb8888eCfb3W3tbENf38OpDAd4Y=
+
+Name: miglayout-core-sources.jar
+SHA-256-Digest: wYS7J4p5XOncQ6EwXzyVIVTEh6liYId1UNC8K7bQu9I=
+
+Name: jgoodies-forms.jar
+SHA-256-Digest: QeeH0B0W2Wun+tKUtxe3nRHgrCkfeB3U/Ncbe4+Jubg=
+
+Name: swing-layout-javadoc.zip
+SHA-256-Digest: g5vwTtoNpnI7csRYF9T/FAjnVSdQr7KSyYvSCXjAx2I=
+
+Name: jfd-loader-src.zip
+SHA-256-Digest: qrvZBgzxt+oQCKyzTktau6n7Bd8jCRGIuo1S01Y+V0U=
+
+Name: LICENSE.html
+SHA-256-Digest: croI08p624IuVknhF/zAjvAUSJV2shqzy+HlyFeON24=
+
+Name: TableLayout-javadoc.jar
+SHA-256-Digest: EmBFzbHBqhCqKQ2rPaz0MyN/AvwbzOhW0R3fOca0Izo=
+
+Name: THIRDPARTYLICENSES.html
+SHA-256-Digest: T/2AjNEqGf9nFqOZjpcsLLg3oVhtzidjdlVbTyf9Ko4=
+
+Name: jfd-loader-javadoc.zip
+SHA-256-Digest: 1SdC+8N29Zn050rUNmmQPD5ejxyysgRDjnAHsFqSGuE=
+
+Name: jgoodies-common-javadoc.jar
+SHA-256-Digest: ML9P5yOh3ZtfWhzIj8T2EFCAXT+X5+bnU0a15ERL/1g=
+
+Name: intellij_forms_rt.jar
+SHA-256-Digest: CddYDYYMGWPZUQL+YxoQ4fBcc8gfZQvhWHhKocWmuYQ=
+
+Name: miglayout-swing-sources.jar
+SHA-256-Digest: lHtOeZ/NYzoOI+qJuemjYXLzbxvrOEYnUK4264Y8Hlo=
+
+Name: miglayout-core.jar
+SHA-256-Digest: G3IuEtHM+CC8XjGb85QVffiYiC5x5EwdXYPmuR/e/9g=
+
+Name: jfd-annotations.jar
+SHA-256-Digest: o/ig/HjfBT3flxgqTAI0PjLyzUce835VObnLtzeeRkk=
+
+Name: swing-layout-src.zip
+SHA-256-Digest: bS6evhMd2sZ3TJyc5zdAIt/X12tAZty40x5HLNTfKas=
+
+Name: miglayout-swing-javadoc.jar
+SHA-256-Digest: AlhDNSA4cB5+lVLH2KsiMvOZi6ak1oQnmBFV4IQRTUI=
+
+Name: README.html
+SHA-256-Digest: gHXHdWz4b2BDGmHQI879+B8wrvjH3uY3OhhpvfbAfME=
+
+Name: TableLayout.jar
+SHA-256-Digest: kG5SaP0Xekg6YrLEeOYQrXUUBhHysoBMkdn/Tq30Ujg=
+
+Name: jgoodies-forms-javadoc.jar
+SHA-256-Digest: j3T93EA5hOVPrsToU754bM8XpluM4Tnw1DTkvCgjumY=
+
+Name: TableLayout-src.jar
+SHA-256-Digest: VSD9MXVqKe31P+RLklsX4txc1Bor7m78pmkfmmNto1A=
+
+Name: intellij_forms_rt_src.zip
+SHA-256-Digest: XJtEY4VKrYeIsZLb3XU9bha4xkbw9C8T/QfQKgHEvCo=
+
+Name: jgoodies-common-sources.jar
+SHA-256-Digest: z3OwBwBgqOvA96XxCY26sPNTX62+fVCdO4kcNqFIRuc=
+
+Name: miglayout-core-javadoc.jar
+SHA-256-Digest: QI24ceqMwC/adFLBJnDn9ESLHZZndoI8F+dbnwipEsQ=
+
+Name: beansbinding.jar
+SHA-256-Digest: 5Igamee26s7w8ck+F3To6xkdoMG5J7mgVOrJR4IB7dk=
+
+Name: jgoodies-common.jar
+SHA-256-Digest: 7FrcPh1WVfGo8CkfYSbVamdHwn6cQDMvZYcpmxmmoiE=
+
+Name: jgoodies-forms-sources.jar
+SHA-256-Digest: VUWCq1NhkoZaSeYzg4GIWy8I/LIhuqaBeXhj/Bx5ocw=
+
+Name: beansbinding-src.zip
+SHA-256-Digest: yfEYp2uDRajjjmP8OLII9BU24HO9E8PJh/KObUAGBXU=
+
+Name: beansbinding-doc.zip
+SHA-256-Digest: NV0lat43ufLh6N4GLJ/eKFTprAXfc7059XfaKjPyeyo=
+
+Name: jfd-annotations-javadoc.zip
+SHA-256-Digest: gDRbx5tqlZNZ9qIg8KY603ZvWWY+q5ekeIrTNxt8c4Q=
+

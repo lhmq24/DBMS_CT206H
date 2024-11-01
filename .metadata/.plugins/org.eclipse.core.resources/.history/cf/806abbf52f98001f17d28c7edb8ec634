@@ -1,0 +1,30 @@
+/*Switch frame 
+between system files*/
+
+package demo;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+
+public class SecondFrame extends JFrame {
+    private MainFrame mainFrame;
+
+    public SecondFrame(MainFrame mainFrame) {
+        this.mainFrame = mainFrame;
+        setTitle("Second Frame");
+        setSize(300, 150);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+
+        JButton backButton = new JButton("Back to Main Frame");
+        backButton.addActionListener((ActionEvent e) -> {
+            // Hide the current frame and show the main frame
+            this.setVisible(false);
+            mainFrame.setVisible(true);
+        });
+
+        add(backButton);
+    }
+}
+

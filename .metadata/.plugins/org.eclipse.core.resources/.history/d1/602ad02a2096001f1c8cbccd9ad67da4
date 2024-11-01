@@ -1,0 +1,79 @@
+package demo;
+
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+
+public class ForgotPassword extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ForgotPassword frame = new ForgotPassword();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public ForgotPassword() {
+		setTitle("Forgot Password");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(240, 255, 240));
+		contentPane.setBorder(new EmptyBorder(20, 5, 5, 5));
+		
+		//Primary color for pane, theme
+		Color primaryColor = contentPane.getBackground();
+		
+		
+		
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		
+		JLabel usernameLabel = new JLabel("Enter Username");
+		usernameLabel.setFont(new Font("Arial", Font.BOLD, 18));
+		usernameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		usernameLabel.setBounds(10, 13, 171, 80);
+		contentPane.add(usernameLabel);
+		
+		JTextField txtEnterUsername = new JTextField();
+		txtEnterUsername.setFont(new Font("Arial", Font.PLAIN, 14));
+		txtEnterUsername.setBounds(217, 31, 197, 40);
+		contentPane.add(txtEnterUsername);
+		txtEnterUsername.setColumns(12);
+		
+		JButton btnNewButton = new JButton("<- Back to Log In");
+		btnNewButton.setHorizontalAlignment(SwingConstants.LEFT);
+		btnNewButton.setBounds(0, 13, 150, 23);
+		btnNewButton.setBackground(primaryColor);
+		btnNewButton.setBorderPainted(false);
+		contentPane.add(btnNewButton);
+		
+		
+		
+		
+	}
+}
