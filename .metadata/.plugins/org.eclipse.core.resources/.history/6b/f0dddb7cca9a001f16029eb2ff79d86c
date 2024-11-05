@@ -1,0 +1,20 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+public class services {
+	private Connection conn = null;
+	private ResultSet rs = null;
+	private PreparedStatement stmt = null;
+	
+	public boolean verifyUser(String username, String pass) {
+		try {
+			
+			return 
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+	}
+}

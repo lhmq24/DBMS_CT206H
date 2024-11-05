@@ -1,0 +1,37 @@
+package demo;
+
+import java.awt.EventQueue;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+//import javax.swing.JFrame;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		connector conn = new connector();
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					LogInView frame = new LogInView();
+					frame.setVisible(true);
+					//Verify account
+					PreparedStatement stmt = null;
+					ResultSet rs = null;
+					
+					try {
+						
+					}
+					catch(Exception e) {
+						
+					}`
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+}

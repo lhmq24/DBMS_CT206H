@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: 11.0.14.1 (Azul Systems, Inc.)
+
+Name: CHANGELOG.html
+SHA-256-Digest: SoOhNaDShfuD7qd3/lcU/WnPxSaaQk/aIks0fTcYgSM=
+
+Name: THIRDPARTYLICENSES.html
+SHA-256-Digest: DJmRRibsnsOrxP60RVK+T4zeF3SSfjGnSbjRMoGgMOY=
+
+Name: examples.zip
+SHA-256-Digest: 4ROVP5mk8Pu9AOqOCMOdu+tcTBF5PdHU+wIcdX/3HNk=
+
+Name: feature.xml
+SHA-256-Digest: tSVXakI7QDN/iAwBAbcDeE4U5PFVp0h7VJvfNQh2XAU=
+
+Name: feature.properties
+SHA-256-Digest: HwapGlfLQtM1RRNKNyP1txmAYMmZ8v3guqKVcIEyY+Y=
+
+Name: LICENSE.html
+SHA-256-Digest: CRL+rT2jbYwxdESnnyx5YypjiLH9IdrdXJfy4GLvIAM=
+
+Name: README.html
+SHA-256-Digest: 14+QfPjmTZg+BlJxKMIlbwWAzUoiZpEbtwnRcJTpSKw=
+

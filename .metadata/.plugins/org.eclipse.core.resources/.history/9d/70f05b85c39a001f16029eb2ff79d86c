@@ -1,0 +1,37 @@
+package demo;
+import java.sql.Connection;	
+//import java.sql.*;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.ResultSet;
+public class connector {
+	
+	public connector() {
+		Connection conn = null;
+		ResultSet rs = null;
+		try {
+			
+			String connStr = ("jdbc:mysql://localhost/demo?" + "user=root");
+			conn = DriverManager.getConnection(connStr);
+			System.out.println("Connected.");
+			
+		}
+		catch(SQLException ex) {
+			ex.printStackTrace();
+			
+		} 
+	}
+	
+
+	public void close() {
+        try {
+            if (conn != null && !conn.isClosed()) {
+                conn.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

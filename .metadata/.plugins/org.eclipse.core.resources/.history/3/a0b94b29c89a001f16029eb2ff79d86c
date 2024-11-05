@@ -1,0 +1,12 @@
+package model;
+
+public class services {
+	Connection conn = new Connection();
+	public boolean verifyUser(String username, String pass) {
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

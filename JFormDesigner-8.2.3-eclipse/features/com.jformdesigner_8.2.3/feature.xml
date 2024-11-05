@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.jformdesigner"
+      label="JFormDesigner"
+      version="8.2.3"
+      provider-name="FormDev Software GmbH">
+
+   <description url="https://www.formdev.com/jformdesigner/">
+      Advanced Swing GUI designer. Its outstanding support for
+JGoodies FormLayout, GroupLayout (Free Design), TableLayout and
+GridBagLayout makes it easy to create professional looking forms.
+   </description>
+
+   <copyright>
+      Copyright (C) 2004-2024 FormDev Software GmbH. All rights reserved.
+   </copyright>
+
+   <license url="LICENSE.html">
+      %license
+   </license>
+
+   <url>
+      <update label="JFormDesigner Update Site" url="https://download.formdev.com/jformdesigner/eclipse/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.platform" version="4.22.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.jformdesigner"
+         download-size="5000"
+         install-size="5000"
+         version="8.2.3"
+         unpack="false"/>
+
+   <plugin
+         id="com.jformdesigner.doc"
+         download-size="2500"
+         install-size="2500"
+         version="8.2.3"
+         unpack="false"/>
+
+   <plugin
+         id="com.jformdesigner.redist"
+         download-size="4000"
+         install-size="4000"
+         version="8.2.3"/>
+
+</feature>
