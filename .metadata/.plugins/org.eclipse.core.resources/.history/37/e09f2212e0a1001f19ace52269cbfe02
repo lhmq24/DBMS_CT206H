@@ -1,0 +1,12 @@
+package controller;
+import view.*;
+import model.*;
+
+public class Controller {
+	private Model model;
+	private LogIn view;
+	public Controller(Model model, LogIn view2 ) {
+		conn = conn2;
+		view = view2;
+	}
+}

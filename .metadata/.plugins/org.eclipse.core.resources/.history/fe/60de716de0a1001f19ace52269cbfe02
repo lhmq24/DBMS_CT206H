@@ -1,0 +1,21 @@
+package model;
+import view.*;
+import controller.*;
+import java.sql.Connection;
+
+public class Model {
+	private String host;
+	private String db;
+	private String user;
+	private Connector conn;
+	private Controller controller;
+	
+	public Model() {
+		conn = new Connector(host,db,user);
+	}
+	
+	//set controller for model
+	public void setController(Controller ctl) {
+		controller = ctl;
+	}
+}

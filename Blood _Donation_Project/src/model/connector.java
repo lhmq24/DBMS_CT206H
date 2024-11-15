@@ -6,15 +6,26 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
-public class connector {
+public class Connector {
 	private String host;
 	private String db;
 	private String user;
 	private Connection conn = null;
-	private ResultSet rs = null;
 	
+	public Connector() {
+		try {
+			this.host = new String("localhost");
+			this.db = new String("demo");
+			this.user = new String("root");
+			String connStr = ("jdbc:mysql://" + host + "/" + db + "?" + "user=" + user);
+			conn = DriverManager.getConnection(connStr);
+			System.out.println("Connected.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}		
+	}
 	
-	public connector(String host,String db, String user) {
+	public Connector(String host,String db, String user) {
 		try {
 			this.host = new String(host);
 			this.db = new String(db);

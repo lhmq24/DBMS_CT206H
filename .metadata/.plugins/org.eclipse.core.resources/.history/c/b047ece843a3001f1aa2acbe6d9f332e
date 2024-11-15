@@ -1,0 +1,15 @@
+package controller;
+
+import view.LogIn;
+import model.User_account;
+import model.Connector;
+
+public class LogInController {
+	private LogIn view;
+	private User_account user_account;
+	private Connector conn;
+	
+	public LogInController(Connection con) {
+		this.conn = con;
+	}
+}

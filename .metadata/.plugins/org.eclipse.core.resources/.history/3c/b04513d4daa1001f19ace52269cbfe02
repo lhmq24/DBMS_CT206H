@@ -1,0 +1,31 @@
+package controller;
+import model.connector;
+import view.LogIn;
+
+import java.awt.EventQueue;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+
+
+public class Main {
+	public static void main(String[] args) {
+		LogIn view = new LogIn();
+		connector model = new connector("localhost","demo","root");
+		controller controller = new controller(view,model);
+//		connector conn = new connector("localhost","demo","root");
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {
+//					LogIn frame = new LogIn(conn);
+//					frame.setVisible(true);			
+//					
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+	}
+
+}

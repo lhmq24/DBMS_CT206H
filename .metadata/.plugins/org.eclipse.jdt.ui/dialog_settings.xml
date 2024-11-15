@@ -5,6 +5,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-17"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="true"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="true"/>
+	<item key="filters_last_used" value="filter_imports;"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -18,6 +19,8 @@
 		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item key="contextSelector.size.x" value="346"/>
+		<item key="contextSelector.size.y" value="336"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

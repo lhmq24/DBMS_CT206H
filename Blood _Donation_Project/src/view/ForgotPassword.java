@@ -5,15 +5,19 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+import model.Connector;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import model.Connector;
+
 
 public class ForgotPassword extends JFrame {
 
@@ -22,25 +26,12 @@ public class ForgotPassword extends JFrame {
 	private JTextField recoveryAnswertextField;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					ForgotPassword frame = new ForgotPassword();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
 	 * Create the frame.
 	 */
 	public ForgotPassword() {
+		//add connection to the frame
+
+		 
 		setTitle("Forgot Password");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -104,7 +95,7 @@ public class ForgotPassword extends JFrame {
 		contentPane.add(recoveryCombobox);
 		
 		//set recovery question answer label
-		JLabel recoveryQuestionAnswerLabel = new JLabel("Enter Username");
+		JLabel recoveryQuestionAnswerLabel = new JLabel("Enter your answer");
 		recoveryQuestionAnswerLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		recoveryQuestionAnswerLabel.setFont(new Font("Arial", Font.BOLD, 16));
 		recoveryQuestionAnswerLabel.setBounds(0, 118, 171, 80);

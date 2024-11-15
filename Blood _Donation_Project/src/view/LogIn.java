@@ -1,10 +1,10 @@
 package view;
-
-import java.awt.EventQueue;
+import java.sql.Connection;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import javax.swing.JCheckBox;
@@ -14,26 +14,48 @@ import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
-
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import model.*;
+import controller.*;
 
 public class LogIn extends javax.swing.JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JLabel usernameLabel;
 	private JTextField txtEnterUsername;
+	private JLabel passLabel;
 	private JPasswordField passwordField;
+	private JCheckBox showPasswordCheckBox;
+	private JLabel forgotPasswordLabel;
+	private JCheckBox Host;
+	private JCheckBox Donor;
+	private JButton btnLogin;
+	private LogInController controller;
 	
 
 	/**
 	 * Create the frame.
 	 */
+
 	public LogIn() {
+		
 		//Init Frame 
-		setTitle("Log In");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 605, 495);
+		this.setTitle("Log In");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.addWindowListener(new WindowAdapter() {
+			@Override
+            public void windowClosing(WindowEvent e) {
+                ;
+            }
+		});
+		this.setBounds(100, 100, 605, 495);
 		
 		//Init contentPane
 		contentPane = new JPanel();
@@ -50,21 +72,21 @@ public class LogIn extends javax.swing.JFrame {
 		
 		
 		//Init username label
-		JLabel usernameLabel = new JLabel("Username");
+		usernameLabel = new JLabel("Username");
 		usernameLabel.setFont(new Font("Arial", Font.BOLD, 18));
 		usernameLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		usernameLabel.setBounds(10, 13, 197, 80);
 		contentPane.add(usernameLabel);
 		
 		//Init username textfield
-		JTextField txtEnterUsername = new JTextField();
+		txtEnterUsername = new JTextField();
 		txtEnterUsername.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		txtEnterUsername.setBounds(217, 31, 330, 40);
 		contentPane.add(txtEnterUsername);
 		txtEnterUsername.setColumns(12);
 
 		//Init password label
-		JLabel passLabel = new JLabel("Password");
+		passLabel = new JLabel("Password");
 		passLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		passLabel.setFont(new Font("Arial", Font.BOLD, 18));
 		passLabel.setBounds(10, 133, 197, 80);
@@ -77,7 +99,7 @@ public class LogIn extends javax.swing.JFrame {
 		contentPane.add(passwordField);
 		
 		//Init show password checkbox
-		JCheckBox showPasswordCheckBox = new JCheckBox("Show Password");
+		showPasswordCheckBox = new JCheckBox("Show Password");
 		showPasswordCheckBox.setEnabled(true);
 		showPasswordCheckBox.setForeground(new Color(0, 0, 51));
 		showPasswordCheckBox.setBackground(new Color(204, 255, 204));
@@ -103,32 +125,29 @@ public class LogIn extends javax.swing.JFrame {
         showPasswordCheckBox.addActionListener(showPassword);
         
         //Init forgot password label
-        JLabel forgotPasswordLabel = new JLabel("Forgot pasword?");
+        forgotPasswordLabel = new JLabel("Forgot pasword?");
 		forgotPasswordLabel.setFont(new Font("Arial", Font.PLAIN, 16));
 		forgotPasswordLabel.setBounds(423, 213, 124, 31);
 		forgotPasswordLabel.setEnabled(true);
 		forgotPasswordLabel.setVisible(true);
 		contentPane.add(forgotPasswordLabel);
-		
+		// Hide the current frame and show the second frame
 		forgotPasswordLabel.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                // Hide the current frame and show the second frame
-                LogIn.this.setVisible(false); // Hide the current frame
-                ForgotPassword forgotpassword = new ForgotPassword(); // Create new frame
-                forgotpassword.setVisible(true); // Show the new frame
+            public void mouseClicked(MouseEvent e) {           
+            	controller.handleSwitchForgotPassword();
             }
         });
 		
 		//Init Host checkbox
-		JCheckBox Host = new JCheckBox("Host");
+		Host = new JCheckBox("Host");
 		Host.setBackground(primaryColor);
 		Host.setFont(new Font("Arial", Font.PLAIN, 16));
 		Host.setBounds(172, 294, 124, 47);
 		contentPane.add(Host);
 		
 		//Init Donor checkbox
-		JCheckBox Donor = new JCheckBox("Donor");
+		Donor = new JCheckBox("Donor");
 		Donor.setBackground(primaryColor);
 		Donor.setFont(new Font("Arial", Font.PLAIN, 16));
 		Donor.setBounds(341, 294, 114, 47);
@@ -143,15 +162,18 @@ public class LogIn extends javax.swing.JFrame {
     		Host.setEnabled(!Donor.isSelected());
     	});
 		
-		//Init button LogIn
-		JButton btnLogin = new JButton("Log In");
-		btnLogin.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				//Connect to database to verify user, then redirect to main page
-		
-			}
-		});
+		//Init button LogIn, handle login event when user click
+		btnLogin = new JButton("Log In");
+		//If user is Host
+		if(Host.isEnabled()) {
+			btnLogin.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent e) {
+//					//Connect to database to verify user, then redirect to main page
+//					
+				}
+			});
+		}
 		btnLogin.setFont(new Font("Arial", Font.BOLD, 16));
 		btnLogin.setForeground(new Color(0, 0, 51));
 		btnLogin.setBackground(new Color(102, 153, 51));
@@ -161,5 +183,9 @@ public class LogIn extends javax.swing.JFrame {
 		
 
         }
+		//set controller for view
+		public void setController(LogInController ctl) {
+			controller = ctl;
+		}
 }
         

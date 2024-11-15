@@ -1,0 +1,9 @@
+package controller;
+import view.*;
+import model.*;
+
+public class controller {
+	private connector conn;
+	private LogIn view;
+	public controller(connector conn, LogIn view2 )
+}
