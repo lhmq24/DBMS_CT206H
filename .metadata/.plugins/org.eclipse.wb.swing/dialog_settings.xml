@@ -18,4 +18,10 @@
 		<item key="width" value="764"/>
 		<item key="height" value="666"/>
 	</section>
+	<section name="org.eclipse.wb.internal.swing.model.layout.gbl.ui.RowEditDialog">
+		<item key="x" value="1190"/>
+		<item key="y" value="448"/>
+		<item key="width" value="578"/>
+		<item key="height" value="664"/>
+	</section>
 </section>

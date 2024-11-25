@@ -74,7 +74,7 @@
 		</section>
 	</section>
 	<section name="NewPackageWizardPage">
-		<item key="create_package_info_java" value="true"/>
+		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item key="width" value="600"/>
@@ -86,5 +86,7 @@
 		<item key="updateTextualMatches" value="false"/>
 		<item key="updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 </section>
